@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 
 namespace ShortestPaathFinder.Models
 {
     public interface IGeoCode
-{
-    double CalcDistance(Vertex v1, Vertex v2);
-}
+    {
+        double CalcDistance(Vertex v1, Vertex v2);
+    }
     public struct Vertex {
             public double lat;
             public double lon;
