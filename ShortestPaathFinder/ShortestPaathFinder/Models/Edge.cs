@@ -20,7 +20,5 @@ namespace ShortestPaathFinder.Models
         {
             this.e = e;
         }
-
-
     }
 }
