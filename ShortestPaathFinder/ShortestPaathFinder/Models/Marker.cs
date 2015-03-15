@@ -19,7 +19,7 @@ namespace ShortestPaathFinder.Models
         public string Time { get; set; }
         [JsonProperty("notes")]
         public string Notes { get; set; }
-        [JsonProperty("reivew")]
+        [JsonProperty("review")]
         public short Review { get; set; }
         [JsonProperty("lat")]
         public double Lat { get; set; }

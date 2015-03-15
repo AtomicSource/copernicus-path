@@ -18,12 +18,11 @@ namespace ShortestPaathFinder.Controllers
         // GET: Route
         public ActionResult Index(string data)
         {
-
-            List<Marker> markerList;
             if (data != null)
             {
-                markerList = JsonConvert.DeserializeObject<List<Marker>>(data);
-            
+                var markerList = JsonConvert.DeserializeObject<List<Marker>>(data);
+                if (markerList == null) throw new ArgumentNullException("markerList");
+
                 // Create Graph
                 Graph graph = new Graph();
 
