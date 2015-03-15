@@ -9,8 +9,8 @@ namespace ShortestPaathFinder.Models
     }
     public struct Edge
     {
-        public IGeocode gc1;
-        public IGeocode gc2;
+        public Geocode gc1;
+        public Geocode gc2;
         public double dist;
     };
     public class Path : IPath
@@ -32,12 +32,12 @@ namespace ShortestPaathFinder.Models
         public double CalcDistance()
         {
             double lat1, lon1, lat2, lon2;
-            lat1 = path.gc1.Vertex.lat;
-            lon1 = path.gc1.Vertex.lon;
-            lat2 = path.gc2.Vertex.lat;
-            lon2 = path.gc2.Vertex.lon;
-            double radius = EarthRadius;
-            return radius * 2 * Math.Asin(Math.Min(1, Math.Sqrt((Math.Pow(Math.Sin((DiffRadian(lat1, lat2)) / 2.0), 2.0)
+
+            lat1 = path.gc1.Lat;
+            lon1 = path.gc1.Lon;
+            lat2 = path.gc2.Lat;
+            lon2 = path.gc2.Lon;
+            return EarthRadius * 2 * Math.Asin(Math.Min(1, Math.Sqrt((Math.Pow(Math.Sin((DiffRadian(lat1, lat2)) / 2.0), 2.0)
                 + Math.Cos(ToRadian(lat1)) * Math.Cos(ToRadian(lat2)) * Math.Pow(Math.Sin((DiffRadian(lon1, lon2)) / 2.0), 2.0)))));
         }
     }
