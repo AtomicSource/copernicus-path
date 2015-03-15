@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
+# Visual Studio 2012
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShortestPaathFinder", "ShortestPaathFinder\ShortestPaathFinder.csproj", "{12ADA90B-B4E4-4792-AC10-78FD7E478BEA}"
@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestProject1", "UnitTes
 	ProjectSection(ProjectDependencies) = postProject
 		{12ADA90B-B4E4-4792-AC10-78FD7E478BEA} = {12ADA90B-B4E4-4792-AC10-78FD7E478BEA}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DjikstrasAlgorithm", "DjikstrasAlgorithm\DjikstrasAlgorithm.csproj", "{EAEE3695-19A5-4549-A2AE-A37EA6C4D899}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 		{C52BA274-4D2A-4227-9263-C81EC3DDCAEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C52BA274-4D2A-4227-9263-C81EC3DDCAEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C52BA274-4D2A-4227-9263-C81EC3DDCAEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAEE3695-19A5-4549-A2AE-A37EA6C4D899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEE3695-19A5-4549-A2AE-A37EA6C4D899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEE3695-19A5-4549-A2AE-A37EA6C4D899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEE3695-19A5-4549-A2AE-A37EA6C4D899}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
