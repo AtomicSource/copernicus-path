@@ -5,15 +5,15 @@ namespace ShortestPaathFinder.Models
 {
     public interface IPath
     {
-        double CalcDistance();
+        double CalcDistance(Marker m1, Marker m2);
     }
     public struct Edge
     {
-        public Geocode gc1;
-        public Geocode gc2;
-        public double dist;
+        public Geocode Gc1;
+        public Geocode Gc2;
+        public double Dist;
     };
-    public class Path : IPath
+    public class Path
     {
         private Edge path;
         public Path(Edge p)
@@ -27,16 +27,16 @@ namespace ShortestPaathFinder.Models
         public static double DiffRadian(double val1, double val2) { return ToRadian(val2) - ToRadian(val1); }
 
         /// <summary> 
-        /// Calculate the distance between two geocodes. Output's in meters.
+        /// Calculate the distance between two Markers. Output is in meters.
         /// </summary>
-        public double CalcDistance()
+        public static double CalcDistance(Marker m1, Marker m2)
         {
             double lat1, lon1, lat2, lon2;
-
-            lat1 = path.gc1.Lat;
-            lon1 = path.gc1.Lon;
-            lat2 = path.gc2.Lat;
-            lon2 = path.gc2.Lon;
+            
+            lat1 = m1.Lat;
+            lon1 = m1.Lon;
+            lat2 = m2.Lat;
+            lon2 = m2.Lon;
             return EarthRadius * 2 * Math.Asin(Math.Min(1, Math.Sqrt((Math.Pow(Math.Sin((DiffRadian(lat1, lat2)) / 2.0), 2.0)
                 + Math.Cos(ToRadian(lat1)) * Math.Cos(ToRadian(lat2)) * Math.Pow(Math.Sin((DiffRadian(lon1, lon2)) / 2.0), 2.0)))));
         }

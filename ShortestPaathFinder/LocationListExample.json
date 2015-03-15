@@ -1,15 +1,18 @@
 [
     {
-        "Id":  "1",
-		"Name": "Place 1",
-        "lat": "37.2",
-        "lon": "42.42"
-    },
-    {
-		"Id":  "2",
-        "Name": "Place 2",
-        "lat": "37.9",
-        "lon": "42.52"
-    }
+        "mid": "1",
+        "uid": "f1401550@trbvm.com",
+        "name": "Melbourne Central",
+        "time": "2006", 
+		"notes": "Doc and I saw a movie here at the Hoyts cinema, then smashed some brews at Cho-Gao.",
+        "review": "4",
+        "lat": -37.81308,
+		"lon": 144.96795 },
+    { "mid": "2", "uid": "f1401550@trbvm.com", "name": "National Gallery of Victoria", "time": "2202", "notes": "Doc and I went to a gallery exhibition on hoverboards. I cant believe it took until 2016 for them to be invented.", "review": "5", "lat": -37.82259, "lon": 144.96892 },
+    { "mid": "3", "uid": "f1401550@trbvm.com", "name": "Inspire9", "time": "15/3/2015", "notes": "I rocked up to meet Doc at this \"hackathon\" thing. It was pretty radical!", "review": "5", "lat": -37.8238279, "lon": 144.9911336 },
+    { "mid": "4", "uid": "f1401550@trbvm.com", "name": "Carlton Medical", "time": "3/15/2015", "notes": "Doc got me patched up at this medical center. Message to self, dont ride the Heidelberg train after 1am!", "review": "4", "lat": -37.78265, "lon": 144.97045 },
+    { "mid": "5", "uid": "f1401550@trbvm.com", "name": "Cool Place", "time": "15/3/2015", "notes": "Place.", "review": "5", "lat": -37.7238098, "lon": 144.9911947 },
+    { "mid": "6", "uid": "f1401550@trbvm.com", "name": "Parliament Station", "time": "14/03/2015", "notes": "Doc and I went to catch a train to Carlton.", "review": "4", "lat": -37.81179, "lon": 144.97309 }
 ]
-//[{"Id":"1","Name":"Place 1","lat":"37.2","lon":"42.42"},{"Id": "2","Name":"Place 2","lat":"37.9","lon":"42.52"}]
+
+//[{"mid":"1","uid":"f1401550@trbvm.com","name":"Melbourne Central","time":"2006","notes":"Doc and I saw a movie here at the Hoyts cinema, then smashed some brews at Cho-Gao.","review":"4","lat":-37.81308,"lon":144.96795},{"mid":"2","uid":"f1401550@trbvm.com","name":"National Gallery of Victoria","time":"2202","notes":"Doc and I went to a gallery exhibition on hoverboards. I cant believe it took until 2016 for them to be invented.","review":"5","lat":-37.82259,"lon":144.96892},{"mid":"3","uid":"f1401550@trbvm.com","name":"Inspire9","time":"15/3/2015","notes":"I rocked up to meet Doc at this \"hackathon\" thing. It was pretty radical!","review":"5","lat":-37.8238279,"lon":144.9911336},{"mid":"4","uid":"f1401550@trbvm.com","name":"Carlton Medical","time":"3/15/2015","notes":"Doc got me patched up at this medical center. Message to self, dont ride the Heidelberg train after 1am!","review":"4","lat":-37.78265,"lon":144.97045},{"mid":"5","uid":"f1401550@trbvm.com","name":"Cool Place","time":"15/3/2015","notes":"Place.","review":"5","lat":-37.7238098,"lon":144.9911947},{"mid":"6","uid":"f1401550@trbvm.com","name":"Parliament Station","time":"14/03/2015","notes":"Doc and I went to catch a train to Carlton.","review":"4","lat":-37.81179,"lon":144.97309}]

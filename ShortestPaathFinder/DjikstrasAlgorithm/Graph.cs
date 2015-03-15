@@ -22,7 +22,7 @@ namespace Dijkstra
             Nodes.Add(name, node);
         }
 
-        public void AddConnection(string fromNode, string toNode, int distance, bool twoWay)
+        public void AddConnection(string fromNode, string toNode, double distance, bool twoWay)
         {
             Nodes[fromNode].AddConnection(Nodes[toNode], distance, twoWay);
         }

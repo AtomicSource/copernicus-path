@@ -115,7 +115,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Route\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -157,6 +156,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Marker.cs" />
     <Compile Include="Models\Path.cs" />
     <Compile Include="Models\Geocode.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -211,8 +211,15 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Views\Shared\_LayoutBackup.cshtml" />
+    <Content Include="Views\Route\index.cshtml" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DjikstrasAlgorithm\DjikstrasAlgorithm.csproj">
+      <Project>{eaee3695-19a5-4549-a2ae-a37ea6c4d899}</Project>
+      <Name>DjikstrasAlgorithm</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
